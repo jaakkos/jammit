@@ -41,7 +41,7 @@ module Jammit
     private
 
     def should_package?
-      Jammit.package_assets && !(Jammit.allow_debugging && params[:debug_assets])
+      Jammit.package_assets && !(Jammit.allow_debugging)
     end
 
     def html_safe(string)
